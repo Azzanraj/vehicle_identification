@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video</title>
+    <style>
+        body {
+            color: white;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+
+        header.feature-box.top {
+            background-color: black;
+            height: 100px;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header.feature-box.second {
+            background-color: blue;
+            height: 50px;
+            text-align: center;
+            margin-top: -25px;
+        }
+
+        .features {
+            background-color: black;
+            width: 900px;
+            height: 700px;
+            border-radius: 35px;
+            object-fit: contain;
+            margin: 20px auto;
+        }
+
+        section.col-sm {
+            background-color: black;
+            width: 1000px;
+            height: 650px;
+            border-radius: 35px;
+            object-fit: contain;
+            margin: 40px auto;
+        }
+
+        img {
+            width: 900px;
+            height: 600px;
+            border-radius: 35px;
+            object-fit: contain;
+            margin: 40px;
+        }
+
+        .new {
+            color: black;
+            margin: 0;
+            padding: 10px;
+            background-color: green;
+            margin-top: -10px;
+        }
+
+        .btn-back {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px auto;
+            display: block;
+            width: 200px;
+        }
+
+        .btn-back:hover {
+            background-color: #ff8c00;
+        }
+    </style>
+</head>
+<body>
+    <header class="feature-box top">
+        <h1><strong>Object Detection using YOLOv8</strong></h1>
+    </header>
+    <header class="feature-box second">
+        <h1><strong>Output Video</strong></h1>
+    </header>
+
+    <section class="col-sm">
+        <img src="{{ url_for('webapp') }}" alt="Upload video">
+    </section>
+
+    <section style="text-align: center;">
+        <a href="/home" class="btn-back">Back to Home</a>
+    </section>
+</body>
+</html>
