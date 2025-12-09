@@ -39,5 +39,5 @@ The YOLOv8 model detects 80 COCO classes. Key vehicle-related classes:
 ## ⚙️ Installation
 **Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/vehicle-classification-yolov8-flask.git
+git clone https://github.com/Azzan/vehicle-classification-yolov8-flask.git
 cd vehicle-classification-yolov8-flask
